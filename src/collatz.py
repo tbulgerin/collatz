@@ -48,12 +48,11 @@ def main():
             # retrieve the input from the user
             values = raw_input()
             first, second = [int(i) for i in values.split(' ')]
+            # calculate the cycle length and display the result
+            cycleLength = calcCycle(first, second)
+            print first, second, cycleLength
         except:
             break
-        
-        #calculate the cycle length and display the result
-        cycleLength = calcCycle(first, second)
-        print first, second, cycleLength
 
 if __name__ == '__main__':
     main()
